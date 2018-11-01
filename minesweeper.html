@@ -1,0 +1,33 @@
+<html>
+<style>
+td {
+    color: white;
+}
+canvas {
+    border-style: dotted 1px white;
+}
+.variable {
+    color: red;
+    font:  bold 18px Georgia;
+
+}
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+<div class="centered">
+    <button onclick='start()'><img src='images/start.jpg' height='50' width='50'></img></button>
+    <table>
+    <tr>
+        <td>Mines Left:</td><td id = 'mines' class='variable'>0</td>
+        <td>Best Score:</td><td id = 'best' class='variable'>0</td>
+        <td>Time:</td><td id = 'time' class='variable'>0</td><td> seconds</td>
+        <td><button id = 'mode'>Mine</button></td></tr>
+    </table>
+</div>
+<canvas  class="centered" id = 'canvas'></canvas>
+<script src = 'ofersLibrary.js'></script>
+<script src = 'minesweeper.js'></script>
+
+</html>
